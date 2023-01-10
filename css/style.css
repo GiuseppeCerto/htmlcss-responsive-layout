@@ -1,0 +1,104 @@
+/****** DEBUG ******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: currentColor;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul,
+li
+a{
+    list-style-type: none;
+    text-decoration: none;
+} 
+
+body{
+    font-family: ’Noto Sans JP’, sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button{
+    border-radius: 20px;
+}
+
+/****** HEADER ******/
+
+.main-header{
+    background-color: rgba(0,132,253,255);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    display: flex;
+}
+
+.nav-item .nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+    line-height: 76px;
+}
+
+.nav-item .button-white{
+    color: black;
+    line-height: 0px;
+    padding: 18px 8px;
+    background-color: white;
+    margin: 20px 0;
+
+}
+
+.menu-ham{
+    color: white;
+    display: none;
+}
+
+@media only screen and (max-width :1168){
+
+    .nav-bar .logo-header, .nav-item{
+        padding: 0 30px;
+    }
+
+}
+
+@media only screen and (max-width: 809px){    
+
+    .nav-bar .menu-ham{
+        line-height: 76px;
+        padding: 0 30px;
+    }
+
+    .logo-header{
+        padding: 0 30px;
+    }
+    
+    .menu-ham{
+        display: block;
+    }
+    .nav-item{
+        display: none;
+    }
+
+}
+
+/******  ******/
