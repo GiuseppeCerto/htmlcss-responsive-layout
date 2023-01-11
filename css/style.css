@@ -12,9 +12,12 @@ img{
     display: block;
 }
 
-ul,
-li
 a{
+    text-decoration: none;
+}
+
+ul,
+li{
     list-style-type: none;
     text-decoration: none;
 } 
@@ -25,6 +28,11 @@ body{
 
 .container{
     max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container-medium{
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -556,6 +564,7 @@ body{
 
 .benefits-section{
     background-color: rgba(151,146,228,255);
+    padding-bottom: 40px;
 }
 
 .benefits-title{
@@ -643,5 +652,97 @@ body{
 }
 
 
+/****** ABUOT US SECTION ******/
 
 
+.about-us{
+    margin-top: 80px;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 80px;
+}
+
+.aboutus-text-section{
+    flex-basis: calc(60%-25px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.paragraph-aboutus{
+    line-height: 35px;
+    color: rgba(113,113,113,255);
+}
+
+.title-aboutus{
+    font-size: 50px;
+    color: rgba(151,146,228,255);
+}
+
+.aboutus-image-section{
+    flex-basis: calc(40%-25px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-aboutus{
+    position: relative;
+}
+
+.image-aboutus > i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 60px;
+    color: rgba(151,146,228,255);
+}
+
+.image-aboutus > img{
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.text-image-aboutus{
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 27px;
+    color: rgba(151,146,228,255);
+}
+
+.button-aboutus{
+    background-color: rgba(151,146,228,255);
+    width: fit-content;
+    padding: 5px 10px;
+    color: white;
+}
+
+.text-botton-aboutus > *{
+    font-size: 12px;
+}
+
+.quote-aboutus{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 60px;
+    color: rgba(151,146,228,255);
+}
+
+
+/****** QUERY ABOUT US ******/
+
+
+@media only screen and (max-width: 1045px){
+
+    .aboutus-section{
+        margin: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 860px){
+
+    .about-us{
+        flex-direction: column;
+    }
+}
