@@ -439,7 +439,7 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    margin-bottom: 80px;
+    padding-bottom: 60px;
 }
 
 .testimonials-title-section {
@@ -515,10 +515,11 @@ body{
 
 /****** QUERY TESTIMONIALS ******/
 
+
 @media only screen and (max-width: 1180px){
 
     .testimonials-title-section{
-        margin: 0px 30px;
+        margin: 30px 30px;
         text-align: center;
     }
 
@@ -548,5 +549,99 @@ body{
         max-width: 190px;
     }
 }
+
+
+/****** BENEFITS SECTION ******/
+
+
+.benefits-section{
+    background-color: rgba(151,146,228,255);
+}
+
+.benefits-title{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.card-benefits-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card-benefits{
+    flex-basis: calc(100% / 3 - 20px);
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    color: rgba(151,146,228,255);
+}
+
+.number-card-benefits{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.title-card-benefits{
+    font-weight: 600;
+}
+
+.text-card-benefits{
+    color: rgba(122,122,122,255);
+}
+
+.text-card-benefits{
+    line-height: 30px;
+}
+
+.lightblue-button{
+    background-color: rgba(151,146,228,255);
+    width: fit-content;
+    padding: 8px 40px;
+}
+
+.lightblue-button > span{
+    color: white;
+}
+
+
+/****** QUERY BENEFITS SECTION ******/
+
+
+@media only screen and (max-width: 1190px){
+
+    .benefits-title{
+        margin: 0 30px;
+    }
+
+    .card-benefits-container{
+        padding: 0 30px
+    }
+}
+
+@media only screen and (max-width: 860px){
+
+    .card-benefits{
+        flex-basis: calc(50% - 15px);
+    }
+
+}
+
+@media only screen and (max-width: 570px){
+
+    .card-benefits{
+        flex-basis: 100%;
+    }
+
+}
+
+
 
 
