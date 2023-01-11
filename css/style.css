@@ -23,7 +23,7 @@ li{
 } 
 
 body{
-    font-family: ’Noto Sans JP’, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .container{
@@ -321,7 +321,6 @@ font-weight: 300;
 }
 
 
-
 .image-skills1 > h2{
     margin-top: 120px;
     color: white;
@@ -440,9 +439,6 @@ font-weight: 300;
     .image-skills2 > h3{
         font-size: 27px;
     }
-
-
-
 }
 
 
@@ -466,17 +462,17 @@ font-weight: 300;
     margin-top: 50px;
     color: rgba(91,91,91,255);
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .testimonial-title2{
     color: rgba(151,146,228,255);
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 .testimonial-title3{
-    font-weight: 300;
+    font-weight: 400;
     color: rgba(91,91,91,255);
     line-height: 30px;
     font-size: 17px;
@@ -516,7 +512,7 @@ font-weight: 300;
 
 .testimonials-text{
     line-height: 30px;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -608,6 +604,7 @@ font-weight: 300;
 
 .text-card-benefits{
     color: rgba(122,122,122,255);
+    font-size: 13px;
 }
 
 .text-card-benefits{
@@ -674,6 +671,7 @@ font-weight: 300;
 }
 
 .paragraph-aboutus{
+    font-size: 14px;
     line-height: 35px;
     color: rgba(113,113,113,255);
 }
