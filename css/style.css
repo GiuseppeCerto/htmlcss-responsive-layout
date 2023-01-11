@@ -9,6 +9,7 @@
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 ul,
@@ -84,11 +85,12 @@ body{
 /****** QUERY HEADER ******/
 
 
-@media only screen and (max-width: 809px){    
+@media only screen and (max-width: 1160px){    
 
     .nav-bar .menu-ham{
         line-height: 76px;
-        padding: 0 30px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .logo-header{
@@ -144,10 +146,10 @@ body{
 
 
 .image-phone-hero{
+    align-self: flex-end;
     max-width: 225px;
     padding-top: 50px;
     margin-right: 40px;
-    margin-bottom: -5px;
 }
 
 .blue-button{
@@ -216,7 +218,7 @@ body{
 
 /****** QUERY HERO  ******/
 
-@media only screen and (max-width: 1125px){
+@media only screen and (max-width: 1150px){
 
     .hero{
         padding: 0 30px;
@@ -227,14 +229,18 @@ body{
         flex-direction: column;
     }
 
+    .text-card-hero{
+        text-align: start;
+    }
+
     .big-card-hero > *{
         margin: 0 28px;
     }
 
     .image-phone-hero{
+        align-self: start;
         padding-top: 0px;
         margin-left: 35px;
-        margin-bottom: -4px;
     }
 }
 
@@ -254,6 +260,31 @@ body{
         text-align: center;
     }
 
+    .image-phone-hero > img{
+        align-self: center;
+    }
+
+}
+
+@media only screen and (max-width: 440px){
+
+    .text-card-hero{
+        text-align: center;
+    }
+
+    .title-card-hero{
+        padding-left: 0;
+    }
+
+    .paragraph-card-hero{
+        padding-left: 0;
+    }
+
+    .image-phone-hero{
+        align-self: center;
+        padding-top: 0px;
+        margin-left: 35px;
+    }
 }
 
 /****** SKLILLS SECTION ******/
@@ -265,6 +296,7 @@ body{
 
 .skills-row{
     display: flex;
+    justify-content: space-between;
     gap: 70px;
     padding-bottom: 50px;
 
@@ -272,19 +304,21 @@ body{
 
 .image-skills1{
     margin-top: 80px;
-    flex-basis: calc(60% - 45px)
+    flex-basis: calc(50% - 45px)
 }
 
 
 
 .image-skills1 > h2{
-    margin-top: 30px;
+    margin-top: 120px;
     color: white;
 }
 
 .image-skills1 > p{
-    margin-top: 40px;
-    line-height: 23px;
+    margin-top: 50px;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 12px;
     color: white;
 }
 
@@ -294,7 +328,7 @@ body{
     align-items: center;
     align-self:flex-end;
     text-align: center;
-    flex-basis: calc(40% - 45px);
+    flex-basis: calc(50% - 45px);
     background-color: white;
     border-radius: 35px;
     padding-top: 30px;
@@ -302,7 +336,7 @@ body{
 }
 
 .image-skills2 > img{
-    max-width: 80%;
+    max-width: 70%;
     margin-top: 20px;
 }
 
@@ -312,16 +346,16 @@ body{
 
 .image-skills2 > p{
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-style: italic;
     line-height: 25px;
     color: rgba(105,129,148,255);
 }
 
 .image-skills2 > i{
-    padding: 15px;
+    padding: 20px;
     border-radius: 50%;
-    font-size: 10px;
+    font-size: 14px;
     background-color: rgba(151,146,228,255);
     margin-bottom: 30px;
 }
@@ -334,22 +368,31 @@ body{
     .skills-row{
         display: flex;
         flex-direction: column;
+        align-content: center;
+        gap: 0;
     }
 
     .image-skills1{
         flex-basis: 100%;
-        margin: 50px 35px;
+        margin: 100px 35px 30px 35px;
+    }
+
+    .image-skills1 > img{
+        width: 100%;
     }
 
     .image-skills1 > h2{
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .image-skills2{
         flex-basis: 100%;
-        margin: 50px 35px;
+        margin: 10px 35px 10px 35px;
     }
 
+    .image-skills2 > p{
+        padding: 0px 20px;
+    }
 }
 
 @media only screen and (max-width: 520px){
@@ -357,24 +400,153 @@ body{
     .skills-row{
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 
     .image-skills1{
         flex-basis: 100%;
-        margin: 50px 35px;
+        margin: 80px 35px 30px 35px;
     }
 
     .image-skills1 > h2{
         font-size: 30px;
     }
 
+    .image-skills1 > p{
+        font-size: 15px;
+        line-height: 27px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
     .image-skills2{
         flex-basis: 100%;
-        margin: 50px 35px;
+        margin: 0px 35px 30px 35px;
     }
 
     .image-skills2 > h3{
-        font-size: 30px;
+        font-size: 27px;
     }
 
+
+
 }
+
+
+/****** TESTIMONIALS SECTION ******/
+
+.testimonials-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 80px;
+}
+
+.testimonials-title-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.testimonial-title1{
+    margin-top: 50px;
+    color: rgba(91,91,91,255);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.testimonial-title2{
+    color: rgba(151,146,228,255);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.testimonial-title3{
+    font-weight: 300;
+    color: rgba(91,91,91,255);
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+
+.testimonials-card-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.card-testimonials{
+    background-color: rgba(151,146,228,255);
+    padding: 40px 40px 40px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-photo{
+    margin-right: 50px;
+}
+
+.testimonial-photo > img{
+    max-width: 170px;
+    border-radius: 50%;
+}
+
+.testimonials-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    color: white;
+}
+
+.testimonials-text{
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.testimonial-sign{
+    font-weight: 600;
+}
+
+
+/****** QUERY TESTIMONIALS ******/
+
+@media only screen and (max-width: 1180px){
+
+    .testimonials-title-section{
+        margin: 0px 30px;
+        text-align: center;
+    }
+
+    .testimonials-card-container{
+        margin: 0px 30px;
+    }
+}
+
+@media only screen and (max-width: 570px){
+
+    .card-testimonials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .testimonial-photo{
+        max-width: 190px;
+        align-self: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-photo > img{
+        max-width: 190px;
+    }
+}
+
+
